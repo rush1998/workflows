@@ -11,3 +11,16 @@ jobs:
         run: |
           node -v
           npm -v
+  parellel-jobs:
+    runs-on: macos-latest
+    steps:
+      - name:  iew SW Version
+        run: sw_vers
+  depends-on:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: echo a string
+        run: Write-Output "Windows String"
+      - name: Error Step
+        run: doesnotexits
