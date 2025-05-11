@@ -25,4 +25,4 @@ jobs:
       - name: Error Step
         run: doesnotexits
       - name: ERROR
-        run : echo "::error::""
+        run : echo "::error::not here""
