@@ -10,4 +10,4 @@ jobs:
       - name: Dir
         run: |
           pwd
-          ls -la
+          ls -la n
